@@ -1,0 +1,174 @@
+:root{
+	--branca-principal: #FFFFFF;
+	--cinza-secundario: #C0C0C0;
+	--botao-azul: #167BF7;
+	--cor-de-fundo: #00030C;
+	--fonte-principal: 'inter';
+}
+
+body{
+	background-color:var(--cor-de-fundo);
+	color:var(--branca-principal);
+	font-family: var(--fonte-principal);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.container_imagem{
+	margin: 1em 0 2em 0;
+    align-items: center;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.principal{
+	background-image: url("img/background.png");
+	background-repeat: no-repeat; /*Para não repetir a imagem*/
+	background-size: contain; /*Vai preencher a imagem por todo o containe que no caso e a section*/
+	align-items: center;
+	text-align: center;
+}
+.container{
+	height: 100vh; /*VH  utilizam o tamanho total da viewport (tamanho do nosso dispositivo), ou seja, uma altura de 100vh corresponde a 100% da página total*/
+	display: grid; /*Altera o botão */
+	grid-template-columns: 50% 50%; /*Separando por colunas fift fift*/
+}
+
+.container_botao{
+	background-color:var(--botao-azul) ;
+	border-radius: 5px;
+	padding: 1em;
+	color:var(--branca-principal);
+	display: block; /*Joga o botão para baixo do texto*/
+	text-decoration: none;
+	margin-bottom: 1em;
+}
+.container_botao:hover{
+	transform: scale(1.1);
+	background-color: red;
+	transition: 1s;
+}
+
+.botao-secundario:hover{
+	background-color: transparent;
+}
+.container_aviso{
+font-size: 12px;
+color: var(--cinza-secundario);
+}
+
+.container_titulo{
+font-size: 28px;
+font-weight: 700;
+}
+
+
+.botao-secundario{
+	background-color: transparent;
+	border: 2px solid var(--branca-principal);
+}
+
+.container_caixa{
+	margin: 0 6em;
+}
+
+.secundario_imagem{
+width: 80%;
+}
+
+.secundario{
+	align-items: center;
+	margin: 0 10em;
+}
+
+.descricao_titulo{
+	font-weight: 700;
+	font-size: 48px;
+	color: var(--branca-principal);
+	margin: 1% 0;
+	
+
+}
+
+.descricao_texto{
+	color: var(--cinza-secundario);
+
+
+}
+
+.secundario_botao{
+	display:inline-block;
+	margin: 1em 0;
+}
+
+.container_descricao{
+	padding: 1em;
+}
+
+.container_favoritos{
+
+}
+
+.dispositivos_lista{
+display: flex; /*Parecido com inlineblock, coloca a lista em uma linha*/
+justify-content: center; /*Centraliza a lista no centro da pagina*/
+list-style-type: none;  /*Remove a bolinha da lista*/
+margin: 5em 0;
+}
+
+.efeitoimagem:hover{
+	transform: scale(1.1) ;
+}
+
+.dispositivos{
+	text-align: center; /*Vai pegar todos os texto inline e vai centralizar eles dentro da section*/
+}
+
+.dispositivo_titulo{
+	font-size: 48px;
+	color: var(--branca-principal);
+}
+
+.lista_item{
+	font-size: 32px;
+	color: var(--branca-principal);
+}
+
+.rodape{
+	text-align: center;
+	margin-bottom: 5em;
+}
+
+.rodape_lista{
+	display: flex;
+	list-style-type: none;
+	font-size: 16px;
+	justify-content: center;
+}
+
+
+
+.rodape_lista li{
+	margin: 1em 8px;
+	
+}
+
+.rodape_lista a:hover{
+	color: orange; 
+}
+
+
+.rodape_lista a{
+	text-decoration: none;
+	color: var(--branca-principal);
+	font-weight: 400;
+}
+
+.rodape p{
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--cinza-secundario);
+	margin: 1em 4em;
+}
